@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sun.keepfit.View.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout15">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="账号登录"
+            android:id="@+id/textView34"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_account"
+            android:layout_below="@+id/textView34"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="60dp"
+            android:hint="手机号" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_login_passwpord"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/editText_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:hint="密码"
+            android:password="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/button_login"
+            android:layout_below="@+id/editText_login_passwpord"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="忘记密码？"
+            android:id="@+id/textView_forget_password"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="没有账号?"
+            android:id="@+id/textView36"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/button_login"
+            android:layout_alignStart="@+id/textView34" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="点此注册"
+            android:id="@+id/textView_signin"
+            android:layout_alignBottom="@+id/textView36"
+            android:layout_toEndOf="@+id/textView36"
+            android:textColor="@color/theme_blue" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/relativeLayout15"
+        android:background="@color/theme_blue"
+        android:layout_alignParentEnd="true" >
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="KeepFit"
+            android:id="@+id/textView35"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

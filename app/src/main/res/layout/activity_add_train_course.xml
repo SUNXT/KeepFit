@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sun.keepfit.View.AddTrainCourseActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/theme_blue"
+        android:id="@+id/relativeLayout7">
+
+        <ImageButton
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton_add_train_go_back"
+            android:src="@mipmap/back"
+            android:background="@color/theme_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:id="@+id/editText2"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:textColor="@color/switch_thumb_normal_material_dark"
+            android:hint="搜索课程"
+            android:layout_toRightOf="@+id/imageButton_add_train_go_back"
+            android:layout_toLeftOf="@+id/textView_add_course_serach"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="搜索"
+            android:id="@+id/textView_add_course_serach"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+        <!--android:background="@android:color/transparent"-->
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_show_courses"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

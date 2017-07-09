@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sun.keepfit.View.CourseDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/relativeLayout5"
+        android:background="@color/theme_blue">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/activity_course_detail_title"
+            android:id="@+id/textView11"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton_dynamic_detail_go_back"
+            android:src="@mipmap/back"
+            android:background="@color/theme_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+            <!--android:background="@android:color/transparent"-->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView11"
+        android:background="@drawable/train_1"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignStart="@+id/relativeLayout5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="参加训练"
+        android:id="@+id/button_add_course_to_train"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/theme_blue"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/imageView11">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/textView_course_total_time"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="总时长"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="20分钟"
+                android:id="@+id/textView_course_total_time"
+                android:layout_below="@+id/textView_course_total_time"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/textView_course_total_fat"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="燃脂"
+                android:id="@+id/textView15"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="100千卡"
+                android:id="@+id/textView_course_total_fat"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="课程介绍"
+        android:id="@+id/textView12"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageView10"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:background="@color/switch_thumb_normal_material_light"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="健身是一种体育项目，如各种徒手健美操、韵律操、形体操以及各种自抗力动作，体操可以增强力量、柔韧性，增加耐力，提高协调，控制身体各部分的能力，从而使身体强健。如果要达到缓解压力的目的，至少一周锻炼3次。"
+        android:id="@+id/textView_course_detail"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginTop="18dp"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/background_light"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/buttombar">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tab_textView_sport"
+                    style="@style/tab_menu_text"
+                    android:text="@string/sport"
+                    android:drawableTop="@drawable/tab_menu_sport"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tab_textView_train"
+                    style="@style/tab_menu_text"
+                    android:text="@string/train"
+                    android:drawableTop="@drawable/tab_menu_train"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tab_textView_share"
+                    style="@style/tab_menu_text"
+                    android:text="@string/share"
+                    android:drawableTop="@drawable/tab_menu_share"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tab_textView_mine"
+                    style="@style/tab_menu_text"
+                    android:text="@string/mine"
+                    android:drawableTop="@drawable/tab_menu_mine"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

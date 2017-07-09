@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KeepFit</string>
+    <string name="sport">运动</string>
+    <string name="train">训练</string>
+    <string name="share">运动圈</string>
+    <string name="mine">我</string>
+    <string name="today_step">今日步数</string>
+    <string name="target_step">目标</string>
+    <string name="newest_update">最新更新：</string>
+    <string name="distance_tips1">行走了</string>
+    <string name="distance_tips2">公里</string>
+    <string name="remind_text">还没有添加训练课程哦，点次添加</string>
+    <string name="activity_add_train_course_title">训练课程</string>
+    <string name="activity_course_detail_title">训练计划</string>
+    <string name="activity_dynamic_detail_title">动态详细</string>
+</resources>

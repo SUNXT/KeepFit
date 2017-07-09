@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/huzi">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:layout_above="@+id/buttombar"
+        >
+    </FrameLayout>
+    <include
+        android:id="@+id/buttombar"
+        layout="@layout/bottom_homepage_bar">
+    </include>
+</RelativeLayout>

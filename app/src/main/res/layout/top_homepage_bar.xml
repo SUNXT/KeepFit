@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/theme_blue"
+    android:weightSum="1"
+    android:id="@+id/topBar">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="KeepFit"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_weight="1.00"
+        android:textAlignment="center" />
+</LinearLayout>

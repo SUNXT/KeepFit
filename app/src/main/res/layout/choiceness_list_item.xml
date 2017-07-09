@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView_choiceness_item_photo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/choiceness_0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2017年第一组训练，我要上推选！这一年我要减肥。"
+        android:id="@+id/tv_choiceness_item_detail"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView15"
+            android:src="@mipmap/thumb_up"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="100"
+            android:id="@+id/tv_choiceness_item_thumb_up_num"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView16"
+            android:src="@mipmap/message"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="100"
+            android:id="@+id/tv_choiceness_item_message_num"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>
